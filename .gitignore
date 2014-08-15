@@ -1,0 +1,17 @@
+.DS_Store
+*.swp
+*~.nib
+*.pyc
+*~
+.rvmrc*
+build/
+xcuserdata/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.tmproj
+.idea/
+Pods/
+Podfile.lock
+.ruby-gemset
+.ruby-version
