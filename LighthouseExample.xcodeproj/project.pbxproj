@@ -24,7 +24,8 @@
 		AC5CA3AF199E5DF800E36B23 /* LocationPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA3AE199E5DF800E36B23 /* LocationPitchViewController.m */; };
 		AC5CA3B5199E663700E36B23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5CA3B4199E663700E36B23 /* CoreLocation.framework */; };
 		AC5CA3B7199E665100E36B23 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */; };
-		AC5CA3CF199E785800E36B23 /* Lighthouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5CA3CD199E785800E36B23 /* Lighthouse.framework */; };
+		FA8BB62C19C84D650041F8A8 /* Lighthouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8BB62919C84D650041F8A8 /* Lighthouse.framework */; };
+		FA8BB62D19C84D650041F8A8 /* Mantle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA8BB62B19C84D650041F8A8 /* Mantle-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,8 @@
 		AC5CA3AE199E5DF800E36B23 /* LocationPitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPitchViewController.m; sourceTree = "<group>"; };
 		AC5CA3B4199E663700E36B23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		AC5CA3CD199E785800E36B23 /* Lighthouse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lighthouse.framework; sourceTree = "<group>"; };
+		FA8BB62919C84D650041F8A8 /* Lighthouse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lighthouse.framework; sourceTree = "<group>"; };
+		FA8BB62B19C84D650041F8A8 /* Mantle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Mantle-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 				AC5CA3B5199E663700E36B23 /* CoreLocation.framework in Frameworks */,
 				AC5CA372199E548A00E36B23 /* CoreGraphics.framework in Frameworks */,
 				AC5CA374199E548A00E36B23 /* UIKit.framework in Frameworks */,
-				AC5CA3CF199E785800E36B23 /* Lighthouse.framework in Frameworks */,
+				FA8BB62C19C84D650041F8A8 /* Lighthouse.framework in Frameworks */,
 				AC5CA370199E548A00E36B23 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +115,7 @@
 		AC5CA36E199E548A00E36B23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC5CA3CC199E785800E36B23 /* Lighthouse.embeddedframework */,
+				FA8BB62819C84D650041F8A8 /* Lighthouse.embeddedframework */,
 				AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */,
 				AC5CA3B4199E663700E36B23 /* CoreLocation.framework */,
 				AC5CA36F199E548A00E36B23 /* Foundation.framework */,
@@ -169,18 +171,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AC5CA3CC199E785800E36B23 /* Lighthouse.embeddedframework */ = {
+		FA8BB62819C84D650041F8A8 /* Lighthouse.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				AC5CA3CD199E785800E36B23 /* Lighthouse.framework */,
-				AC5CA3CE199E785800E36B23 /* Resources */,
+				FA8BB62919C84D650041F8A8 /* Lighthouse.framework */,
+				FA8BB62A19C84D650041F8A8 /* Resources */,
 			);
 			path = Lighthouse.embeddedframework;
 			sourceTree = "<group>";
 		};
-		AC5CA3CE199E785800E36B23 /* Resources */ = {
+		FA8BB62A19C84D650041F8A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA8BB62B19C84D650041F8A8 /* Mantle-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5CA38E199E548A00E36B23 /* Images.xcassets in Resources */,
+				FA8BB62D19C84D650041F8A8 /* Mantle-Info.plist in Resources */,
 				AC5CA37A199E548A00E36B23 /* InfoPlist.strings in Resources */,
 				AC5CA38C199E548A00E36B23 /* Main.storyboard in Resources */,
 			);
@@ -369,6 +373,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -400,6 +405,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -498,6 +504,7 @@
 				AC5CA3A6199E548A00E36B23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC5CA3A7199E548A00E36B23 /* Build configuration list for PBXNativeTarget "LighthouseExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				AC5CA3A9199E548A00E36B23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

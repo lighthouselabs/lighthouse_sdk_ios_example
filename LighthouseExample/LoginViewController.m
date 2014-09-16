@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIButton *login;
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
 
 @end
 
@@ -27,7 +28,7 @@
     self.spinner.hidden = NO;
     [self.spinner startAnimating];
     
-    NSDictionary *userModel = @{@"username" : @"tester@testing.com"};
+    NSDictionary *userModel = @{@"username" : self.usernameField.text};
     [self performSelector:@selector(userHasJustLoggedIn:) withObject:userModel afterDelay:1.0f];
 }
 
