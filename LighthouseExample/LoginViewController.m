@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIButton *login;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 
 @end
 
@@ -39,9 +40,7 @@
     // You can send an email or any other unique identifier, to help you refer to that user
     // later in your systems.
     //
-    Lighthouse *lighthouse = [(AppDelegate *) [UIApplication sharedApplication].delegate lighthouse];
-    [lighthouse setUserIdentifier:userObject[@"username"]];
-    
+    [[Lighthouse sharedInstance] setUserIdentifier:userObject[@"username"]];
     
     
     [self performSegueWithIdentifier:@"FinishedLogingIn" sender:self];
@@ -51,6 +50,7 @@
 {
     [super viewDidLoad];
     self.spinner.hidden = YES;
+    self.versionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
 @end

@@ -17,9 +17,23 @@
     // for the environment your are running in. Lighthouse object needs to be created inside AppDelegate, so it is
     // retained for the whole time your app is running.
     //
-    self.lighthouse = [Lighthouse initWithClientKey:@"<YOUR_CLIENT_KEY>"
-                                          secretKey:@"<YOUR_SECRET_KEY>"
+#ifdef DEBUG
+    self.lighthouse = [Lighthouse initWithClientKey:@"<YOUR_UAT_CLIENT_KEY>"
+                                          secretKey:@"<YOUR_UAT_SECRET_KEY>"
                                         environment:LH_UAT];
+#else
+    self.lighthouse = [Lighthouse initWithClientKey:@"<YOUR_PROD_CLIENT_KEY>"
+                                          secretKey:@"<YOUR_PROD_SECRET_KEY>"
+                                        environment:LH_PROD];
+#endif
+
+    //
+    // If you are using Lighthouse to send notifications you need to ensure the user has given permission for notifications (iOS 8 only)
+    //
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+
     return YES;
 }
 

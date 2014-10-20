@@ -24,8 +24,7 @@
 		AC5CA3AF199E5DF800E36B23 /* LocationPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA3AE199E5DF800E36B23 /* LocationPitchViewController.m */; };
 		AC5CA3B5199E663700E36B23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5CA3B4199E663700E36B23 /* CoreLocation.framework */; };
 		AC5CA3B7199E665100E36B23 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */; };
-		FA2B416519E3128F00113F96 /* Lighthouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2B416219E3128F00113F96 /* Lighthouse.framework */; };
-		FA2B416619E3128F00113F96 /* Mantle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2B416419E3128F00113F96 /* Mantle-Info.plist */; };
+		FA51576319F520DF001681D3 /* Lighthouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA51576219F520DF001681D3 /* Lighthouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC5CA36C199E548A00E36B23 /* LighthouseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LighthouseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5CA36C199E548A00E36B23 /* LH Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LH Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5CA36F199E548A00E36B23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC5CA371199E548A00E36B23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AC5CA373199E548A00E36B23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -62,8 +61,7 @@
 		AC5CA3AE199E5DF800E36B23 /* LocationPitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPitchViewController.m; sourceTree = "<group>"; };
 		AC5CA3B4199E663700E36B23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		FA2B416219E3128F00113F96 /* Lighthouse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lighthouse.framework; sourceTree = "<group>"; };
-		FA2B416419E3128F00113F96 /* Mantle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Mantle-Info.plist"; sourceTree = "<group>"; };
+		FA51576219F520DF001681D3 /* Lighthouse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lighthouse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,7 @@
 				AC5CA3B5199E663700E36B23 /* CoreLocation.framework in Frameworks */,
 				AC5CA372199E548A00E36B23 /* CoreGraphics.framework in Frameworks */,
 				AC5CA374199E548A00E36B23 /* UIKit.framework in Frameworks */,
-				FA2B416519E3128F00113F96 /* Lighthouse.framework in Frameworks */,
+				FA51576319F520DF001681D3 /* Lighthouse.framework in Frameworks */,
 				AC5CA370199E548A00E36B23 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,7 +104,7 @@
 		AC5CA36D199E548A00E36B23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC5CA36C199E548A00E36B23 /* LighthouseExample.app */,
+				AC5CA36C199E548A00E36B23 /* LH Example.app */,
 				AC5CA393199E548A00E36B23 /* LighthouseExampleTests.xctest */,
 			);
 			name = Products;
@@ -115,7 +113,7 @@
 		AC5CA36E199E548A00E36B23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA2B416119E3128F00113F96 /* Lighthouse.embeddedframework */,
+				FA51576219F520DF001681D3 /* Lighthouse.framework */,
 				AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */,
 				AC5CA3B4199E663700E36B23 /* CoreLocation.framework */,
 				AC5CA36F199E548A00E36B23 /* Foundation.framework */,
@@ -171,23 +169,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FA2B416119E3128F00113F96 /* Lighthouse.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				FA2B416219E3128F00113F96 /* Lighthouse.framework */,
-				FA2B416319E3128F00113F96 /* Resources */,
-			);
-			path = Lighthouse.embeddedframework;
-			sourceTree = "<group>";
-		};
-		FA2B416319E3128F00113F96 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FA2B416419E3128F00113F96 /* Mantle-Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,7 +186,7 @@
 			);
 			name = LighthouseExample;
 			productName = LighthouseExample;
-			productReference = AC5CA36C199E548A00E36B23 /* LighthouseExample.app */;
+			productReference = AC5CA36C199E548A00E36B23 /* LH Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AC5CA392199E548A00E36B23 /* LighthouseExampleTests */ = {
@@ -265,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5CA38E199E548A00E36B23 /* Images.xcassets in Resources */,
-				FA2B416619E3128F00113F96 /* Mantle-Info.plist in Resources */,
 				AC5CA37A199E548A00E36B23 /* InfoPlist.strings in Resources */,
 				AC5CA38C199E548A00E36B23 /* Main.storyboard in Resources */,
 			);
@@ -374,6 +354,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "LH Example";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -406,6 +387,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "LH Example";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -419,11 +401,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lighthouse.embeddedframework",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Lighthouse-evrozzqmarhqdqaduruueuvdjebt/Build/Intermediates/ArchiveIntermediates/Lighthouse-DEBUG/IntermediateBuildFilesPath/UninstalledProducts",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LighthouseExample/LighthouseExample-Prefix.pch";
 				INFOPLIST_FILE = "LighthouseExample/LighthouseExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(inherited)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -436,11 +420,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lighthouse.embeddedframework",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Lighthouse-evrozzqmarhqdqaduruueuvdjebt/Build/Intermediates/ArchiveIntermediates/Lighthouse-DEBUG/IntermediateBuildFilesPath/UninstalledProducts",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LighthouseExample/LighthouseExample-Prefix.pch";
 				INFOPLIST_FILE = "LighthouseExample/LighthouseExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(inherited)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

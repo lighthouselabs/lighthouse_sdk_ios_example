@@ -18,8 +18,7 @@
     // have information to respond positively to the Location services authorization challenge.
     // Calling requestLocationAccess method will bring up the location authorization dialog.
     //
-    Lighthouse *lighthouse = [(AppDelegate *) [UIApplication sharedApplication].delegate lighthouse];
-    [lighthouse requestLocationAccess];
+    [[Lighthouse sharedInstance] requestLocationAccess];
 }
 
 - (IBAction)logout:(id)sender
@@ -28,8 +27,7 @@
     // When your user logs out, ensure that you are calling clearUserIdentifier, so that events generated
     // by the device are no longer attributed to that user
     //
-    Lighthouse *lighthouse = [(AppDelegate *) [UIApplication sharedApplication].delegate lighthouse];
-    [lighthouse clearUserIdentifier];
+    [[Lighthouse sharedInstance] clearUserIdentifier];
 }
 
 @end
