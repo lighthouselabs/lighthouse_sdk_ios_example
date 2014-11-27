@@ -24,7 +24,7 @@
 		AC5CA3AF199E5DF800E36B23 /* LocationPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA3AE199E5DF800E36B23 /* LocationPitchViewController.m */; };
 		AC5CA3B5199E663700E36B23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5CA3B4199E663700E36B23 /* CoreLocation.framework */; };
 		AC5CA3B7199E665100E36B23 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */; };
-		FA51576319F520DF001681D3 /* Lighthouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA51576219F520DF001681D3 /* Lighthouse.framework */; };
+		FAC0BE3B1A27641B00767053 /* Lighthouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC0BE3A1A27641B00767053 /* Lighthouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		AC5CA3AE199E5DF800E36B23 /* LocationPitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPitchViewController.m; sourceTree = "<group>"; };
 		AC5CA3B4199E663700E36B23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		FA51576219F520DF001681D3 /* Lighthouse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lighthouse.framework; sourceTree = "<group>"; };
+		FAC0BE3A1A27641B00767053 /* Lighthouse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lighthouse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				AC5CA3B5199E663700E36B23 /* CoreLocation.framework in Frameworks */,
 				AC5CA372199E548A00E36B23 /* CoreGraphics.framework in Frameworks */,
 				AC5CA374199E548A00E36B23 /* UIKit.framework in Frameworks */,
-				FA51576319F520DF001681D3 /* Lighthouse.framework in Frameworks */,
+				FAC0BE3B1A27641B00767053 /* Lighthouse.framework in Frameworks */,
 				AC5CA370199E548A00E36B23 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +113,7 @@
 		AC5CA36E199E548A00E36B23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA51576219F520DF001681D3 /* Lighthouse.framework */,
+				FAC0BE3A1A27641B00767053 /* Lighthouse.framework */,
 				AC5CA3B6199E665100E36B23 /* CoreBluetooth.framework */,
 				AC5CA3B4199E663700E36B23 /* CoreLocation.framework */,
 				AC5CA36F199E548A00E36B23 /* Foundation.framework */,
@@ -216,6 +216,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Jamgo;
 				TargetAttributes = {
+					AC5CA36B199E548A00E36B23 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					AC5CA392199E548A00E36B23 = {
 						TestTargetID = AC5CA36B199E548A00E36B23;
 					};

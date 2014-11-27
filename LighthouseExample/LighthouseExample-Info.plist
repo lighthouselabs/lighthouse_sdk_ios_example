@@ -26,6 +26,10 @@
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>So that we can show you great things near you!</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
